@@ -24,7 +24,7 @@ function generateGrid(num) {
 generateGrid(numOfGridItems);
 
 // Remove old grid and prompt for new one with dimensions defined by user
-const makeNewGrid = newGridBtn.addEventListener('click', () => {
+newGridBtn.addEventListener('click', () => {
     const clearContainer = () => {container.innerHTML = ''; container.style.backgroundColor = 'white'};
     let numOfGridItems = Number(window.prompt('Enter a number of squares per side for the new grid (No less than 1, no more than 100).'));
     if (numOfGridItems > 1 && numOfGridItems < 100) {
